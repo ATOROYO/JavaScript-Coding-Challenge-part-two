@@ -35,3 +35,39 @@ const total = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
 
 console.log(tips);
 console.log(total);
+
+// Coding Challenge #3
+// Let's go back to Mark and John comparing their BMIs! This time, let's use objects to implement the calculations! Remember: BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter)
+
+// SOLUTION
+const mark = {
+  fullName: 'Mark Miller',
+  weight: 78,
+  height: 1.69,
+  calBMI: function () {
+    const markBMI = this.weight / (this.height * this.height);
+    return markBMI;
+  },
+};
+
+const john = {
+  fullName: 'John Smith',
+  weight: 92,
+  height: 1.95,
+  calBMI: function () {
+    const johnBMI = this.weight / (this.height * this.height);
+    return johnBMI;
+  },
+};
+
+console.log(john.calBMI());
+
+if (mark.calBMI() > john.calBMI()) {
+  console.log(
+    `Mark's BMI (${mark.calBMI()}) is higher than John's (${john.calBMI()})!`
+  );
+} else {
+  console.log(
+    `John's BMI (${john.calBMI()}) is higher than Mark's (${mark.calBMI()})!`
+  );
+}
