@@ -6,8 +6,8 @@
 // SOLUTION
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 
-const dolphins = calcAverage(44, 23, 71);
-const koalas = calcAverage(65, 54, 49);
+const dolphins = calcAverage(85, 54, 41);
+const koalas = calcAverage(23, 34, 27);
 console.log(koalas);
 
 const checkWinner = function (avgDolpins, avgKoalas) {
